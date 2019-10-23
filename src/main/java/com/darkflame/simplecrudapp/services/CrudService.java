@@ -1,16 +1,14 @@
 package com.darkflame.simplecrudapp.services;
 
-import java.util.Set;
+import java.util.List;
 
 public interface CrudService<T, ID> {
 
-    Set<T> findAll();
+    List<T> findAll();
 
     T findById(ID id);
 
-    T save(T object);
-
-    void delete(T object);
+    void save(T object);
 
     void deleteById(ID id);
 }

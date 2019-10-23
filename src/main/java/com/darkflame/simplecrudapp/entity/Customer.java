@@ -23,14 +23,14 @@ public class Customer {
     private String firstName;
 
     @Column(name= "last_name")
-    private String last_name;
+    private String lastName;
 
     @Override
     public String toString() {
         return "Customer{" +
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
-                ", last_name='" + last_name + '\'' +
+                ", last_name='" + lastName + '\'' +
                 '}';
     }
 }
